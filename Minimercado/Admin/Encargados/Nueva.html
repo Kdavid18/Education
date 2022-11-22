@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+        <title>Nuevo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body >
+        
+        <div class="container" align='center'>
+            <br><br>
+            <div class="card border-success mb-3" style="width: 18rem;" >
+
+                <div class="card-body">
+                    <form action="Nueva.php" method="POST">
+                        <div class="form-group">
+
+                            <div class="form-group">
+                                <label >Nombres</label>
+                                <input type="text" class="form-control"  placeholder="Nombres" name="nombres" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Apellidos</label>
+                                <input type="text" class="form-control"  placeholder="Apellidos" name="apellidos" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Contraseña</label>
+                                <input type="password" class="form-control"  placeholder="Contraseña" name="contrasena" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Tipo Identificacion</label>
+                                <input type="text" class="form-control"  placeholder="Tipo Identificacion" name="tipoDoc" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Numero Identificacion</label>
+                                <input type="text" class="form-control"  placeholder="Numero Identificacion" name="numDoc" required="true">
+                            </div>
+                            <label for="exampleInputEmail1">Celular</label>
+                            <input type="text" class="form-control" placeholder=" Celular" name="celular" required="true">
+                            <div class="form-group">
+                                <label >Rol</label>
+                                <input type="text" class="form-control"  placeholder="Rol" name="rol" required="true">
+                            </div>
+                       
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">ID Administrador</label>
+                            <input type="text" class="form-control"  placeholder="ID Administrador" name="id_administrador" required="true">
+                        </div>
+                             </div>
+                        <button type="submit" class="btn btn-primary">Registrar Encargado</button>
+                        <br><br>
+                    </form>
+                </div>
+               
+            </div>
+             <br>
+        </div>
+    </body>
+</html>

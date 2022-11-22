@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="../../assets/img/favicon.ico">
+        <title>LogIn</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    </head>
+    <body >
+
+
+    <?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
+        <br><br><br><br><br><br>
+
+        <div class="container" align="center">
+            <div class="card border-success mb-6" style="width: 18rem;">
+
+                <div class="card-body" >
+                    <form action="LogIn.php" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Numero Documento</label>
+                            <input type="text" class="form-control"   name="numDoc" required="true">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <br>
+                        <a href="LogIn.html"></a>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control"  name="contrasena" required="true">
+                        </div>
+
+                          <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">
+                      Ingresar
+                  </button>
+                        <br>
+                        <small id="emailHelp" class="form-text text-muted">No te has registrado aun? <a href="Registro.html">Registrate ahora</a> </small>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

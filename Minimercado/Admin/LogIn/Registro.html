@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body >
+  
+        <div class="container" align='center'>
+            <br><br>
+            <div class="card border-success mb-3" style="width: 18rem;" >
+
+                <div class="card-body">
+                    <form action="Registro.php" method="POST">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label >Usuario</label>
+                                <input type="text" class="form-control"  placeholder="Usuario" name="usuario" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Nombres</label>
+                                <input type="text" class="form-control"  placeholder="Nombres" name="nombres" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Apellidos</label>
+                                <input type="text" class="form-control"  placeholder="Apellidos" name="apellidos" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Contraseña</label>
+                                <input type="text" class="form-control"  placeholder="Contraseña" name="contrasena" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Tipo Identificacion</label>
+                                <input type="text" class="form-control"  placeholder="Tipo Identificacion" name="tipoDoc" required="true">
+                            </div>
+                            <div class="form-group">
+                                <label >Numero Identificacion</label>
+                                <input type="text" class="form-control"  placeholder="Numero Identificacion" name="numDoc" required="true">
+                            </div>
+                             <div class="form-group">
+                                <label >Celular</label>
+                                <input type="text" class="form-control"  placeholder="Celular" name="celular" required="true">
+                            </div>
+                           <div class="form-group">
+                                <label for="exampleFormControlSelect1">Rol</label>
+                                <select class="form-control" id="exampleFormControlSelect1" name="rol">
+                                    <option>Administrador</option>
+                                    <option>Cliente</option>
+                                    <option>Encargado</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn btn-primary">Registrarme</button>
+                        <br><br>
+                        <small id="emailHelp" class="form-text text-muted">No has iniciado sesion? <a href="LogIn.html">Inicia Sesion ahora</a> </small>
+                    </form>
+                </div>
+               
+            </div>
+             <br>
+        </div>
+    </body>
+</html>
